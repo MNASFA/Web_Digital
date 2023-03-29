@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+  --mainColor: #ffE61B;
+}
+
+.service_container{
+  width: 100%;
+  display: block;
+}
+div .title
+{
+  color: #000;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  padding: 10px;
+  position: relative;
+}
+div .title::after
+{
+  content: '';
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  border-radius: 2px;
+  background-color:var(--mainColor);
+  left: 0;
+  bottom: 0;
+}
+.service_container .cards
+{
+  width: max-content;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+.service_container .cards .card{
+  width: 341px;
+  height: 450px;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  transition: .5s;
+}
+.service_container .cards .card:nth-child(1){
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../../Components/assets/img/web_d.jpg) ;
+}
+.service_container .cards .card:nth-child(2){
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../../Components/assets/img/graphic_d.jpg) ;
+}
+.service_container .cards .card:nth-child(3){
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../../Components/assets/img/degital_m.jpg) ;
+}
+.service_container .cards .card:nth-child(4){
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../../Components/assets/img/app_d.jpg) ;
+}
+.service_container .cards .card:nth-child(5){
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../../Components/assets/img/photo_ed.jpg) ;
+}
+.service_container .cards .card:nth-child(6){
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../../Components/assets/img/viseo_ed.jpg) ;
+}
+.card small{
+  color: white;
+  font-size: 40px;
+  font-family: 'Bebas Neue', cursive;
+  padding: 15px;
+}
+.hovertext{
+  padding:10px;
+  height: 100%;
+  border: 1px solid white;
+  display: none;
+  margin: 10px;
+}
+.hovertext fieldset{
+  text-align: center;
+  padding:100px 0;
+}
+
+.hovertext p{
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  line-height: 25px;
+}
+.hovertext legend {
+  color: var(--mainColor);
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+}
+.card:hover{
+  cursor: pointer;
+}
+
+.card:hover .mainsmall{
+  display: none;
+}
+.card:hover .hovertext{
+  display: block;
+}
+@media screen and (max-width:1000px) {
+  .service_container .cards
+  {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+  }
+  .service_container {
+    text-align: center;
+  }
+  .blog_cards {
+    grid-template-columns: auto auto !important;
+  }
+
+}
+@media (max-width:550px) {
+  .blog_cards , .service_container .cards {
+    display: grid;
+    grid-template-columns: auto !important;
+  }
+  .container .left, .container .right {
+    padding: 15px;
+  }
+  p{
+    font-size: 15px !important;
+  }
+  .blog_container .container {
+    padding-right: 10px;
+    padding-left: 20px;
+}
+}
+
+@media (max-width:300px) {
+  .service_container .cards .card {
+    width: 250px;
+    height: 350px;
+    margin-left: 10px;
+}
+.confiance_container {
+
+   padding: 0 !important;  
+
+}
+.confiance_container .content {
+  padding: 10px 0 !important;
+}
+.container .left a {
+  padding: 10px 15px !important;
+}
+}

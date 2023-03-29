@@ -1,0 +1,32 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap');
+:root{
+    --mainColor: #ffE61B;
+}
+.carousel-item
+{
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Sono', sans-serif;
+}
+.carousel-item h5{
+  font-size: 50px;
+  font-weight: 800;
+  color: var(--mainColor);
+}
+.carousel-item p{
+  font-size: 27px;
+  font-weight: 500;
+  color: white;
+}
+.carousel-item:nth-child(1){
+  background-image: url(../../Components/assets/img/bg5.jpg);
+}
+.carousel-item:nth-child(2){
+  background-image: url(../../Components/assets/img/bg8.jpg);
+}
+.carousel-item:nth-child(3){
+  background-image: url(../../Components/assets/img/bg7.jpg);
+}

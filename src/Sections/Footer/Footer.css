@@ -1,0 +1,19 @@
+.newFooterStyle{
+    background-color: #F5F5F5;
+    color: #000;
+}
+.newFooterStyle i{
+    color: #f3d914;
+    font-size: 20px;
+    margin-right: 7px;
+}
+.newFooterStyle li a{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Quicksand', sans-serif;
+}
+.bloglinks{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+

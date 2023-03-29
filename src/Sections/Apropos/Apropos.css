@@ -1,0 +1,79 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Sono:wght@200;300;400;500;600;700;800&display=swap');
+
+  :root{
+    --mainColor: #ffE61B;
+}
+.container{
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .left,.container .right
+{
+  width: 48%;
+}
+.container .left p{
+  font-size: 17px;
+  font-family: 'Quicksand', sans-serif;
+  padding: 5px 0;
+  line-height: 25px;
+}
+.container .left h2{
+  padding:10px 0;
+  font-size: 35px;
+  font-family: 'Sono', sans-serif;
+  color: var(--mainColor);
+  
+}
+/* .container .left h2::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100px;
+  height: 3px;
+  background-color: var(--mainColor);
+} */
+.container .left a{
+  color: white;
+  background-color: var(--mainColor);
+  padding: 15px 40px;
+  text-decoration: none;
+  font-size: 18px;
+  border: 2px solid var(--mainColor);
+  transition: .5s;
+}
+.container .left a:hover{
+  color: var(--mainColor);
+  background-color: white;
+}
+.container .right div img{
+  width: 100%;
+}
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+@media screen and (max-width:1000px) {
+  .container
+      {
+      display: block;
+      }
+  .container .left,.container .right
+    {
+    width: 100%;
+    margin-bottom: 35px;
+    text-align: center;
+    }
+}
